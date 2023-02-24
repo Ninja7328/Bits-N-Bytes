@@ -7,3 +7,8 @@ class DoctorForm(forms.ModelForm):
     class Meta:
         model = Doctor
         exclude = ('status', 'user', 'dob', 'doj')
+
+class ContactForm(forms.ModelForm):
+    class Meta:
+        model = Contact
+        exclude = ('user','contact','subject','message')
